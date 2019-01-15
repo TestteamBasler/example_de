@@ -134,4 +134,8 @@ public class GWTestcaseManager implements IGWTestcaseManager {
     setStack(null);
   }
 
+  @Override
+  public void init() {
+  }
+
 }
