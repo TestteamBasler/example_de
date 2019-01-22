@@ -36,7 +36,7 @@ public class LoginLogoutTest extends AGWPCTest {
     
     werkzeugmenue.logout();
     
-	getGWDriver().close();
+	  getGWDriver().close();
   }
 
 }

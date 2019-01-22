@@ -8,9 +8,16 @@ public class NeueAntraege extends AGWComponent {
 
   @ById("NewSubmission:NewSubmissionScreen:SelectAccountAndProducerDV:Account:SelectAccount")
   private BrElement kontosuchen;
+  
+  @ById("NewSubmission:NewSubmissionScreen:ProductOffersDV:ProductSelectionLV:7:addSubmission")
+  private BrElement newprivatfahrzeug;
 
   public void kontoSuchen() {
 	  kontosuchen.click();
+  }
+  
+  public void newPrivatFahrzeug() {
+    newprivatfahrzeug.click();
   }
 
 }
