@@ -1,4 +1,4 @@
-package com.baloise.qa.testautomation.gw.fahrzeugsuchen;
+package com.baloise.qa.testautomation.gw.components.fahrzeugsuchen;
 
 import org.open.insurance.baloise.qa.ui.taf.gw.elements.GWCombobox;
 
