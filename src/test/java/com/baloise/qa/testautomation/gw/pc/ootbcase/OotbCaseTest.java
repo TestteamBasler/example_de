@@ -70,6 +70,7 @@ public class OotbCaseTest extends AGWPCTest {
     fahrzeugsuchen.fahrzeugdetailsfuellen();
     fahrzeugangaben.fahrzeugangabendeckungenfuellen();
     fahrzeugangaben.evbanfordern();
+    fahrzeugangaben.check();
     fahrzeugangaben.sfrhaftpflichtfuellen();
     sfreingeben.sfrfuellen();
     fahrzeugangaben.sfrkaskofuellen();
