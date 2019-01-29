@@ -65,7 +65,7 @@ public class Fahrzeugangaben extends AGWComponent {
   @ById("SubmissionWizard:LOBWizardStepGroup:LineWizardStepSet:PFVehicle_ExtScreen:PFVehicle_ExtPanelSet:CoverableListDetailPanel:CoverableDetailsCV:PFVehicle_ExtDetailsDV:PFVehicleSFROwner:PFVehicleSFROwner_ExtInputSet:SfrLV_tb:AddKaskoSFR-btnWrap")
   public BrElement sfrkasko;
   
-  @ById("SubmissionWizard:LOBWizardStepGroup:LineWizardStepSet:PFVehicle_ExtScreen:PFVehicle_ExtPanelSet:CoverableListDetailPanel:CoverableDetailsCV:PFVehicle_ExtDetailsDV:PFVehicleSFROwner:PFVehicleSFROwner_ExtInputSet:SfrLV_tb:AddKaskoSFR:UseLiabilityPrimNamedInsured-textEl")
+  @ById("SubmissionWizard:LOBWizardStepGroup:LineWizardStepSet:PFVehicle_ExtScreen:PFVehicle_ExtPanelSet:CoverableListDetailPanel:CoverableDetailsCV:PFVehicle_ExtDetailsDV:PFVehicleSFROwner:PFVehicleSFROwner_ExtInputSet:SfrLV_tb:AddKaskoSFR:CreateBasedOnLiability-textEl")
   public BrElement sfrkaskowahl;
   
   @ById("SubmissionWizard:Next-btnInnerEl")
@@ -96,6 +96,7 @@ public class Fahrzeugangaben extends AGWComponent {
   public void sfrkaskofuellen() {
     sfrkasko.click();
     sfrkaskowahl.click();
+    weiter.click();
   }
 
 }

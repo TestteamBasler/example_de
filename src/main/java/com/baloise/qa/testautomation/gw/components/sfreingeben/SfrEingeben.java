@@ -5,24 +5,26 @@ import com.baloise.testautomation.taf.base._interfaces.IAnnotations.ById;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.ByXpath;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProvider;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProviderType;
-import com.baloise.testautomation.taf.base._interfaces.IAnnotations.Fill;
 import com.baloise.testautomation.taf.browser.elements.BrElement;
-import com.baloise.testautomation.taf.browser.elements.BrStringInput;
 
 @DataProvider(DataProviderType.EXCEL)
 public class SfrEingeben extends AGWComponent {
 
   //@Fill(10)
-  //@ByXpath("//table[@id='PolicySFR_ExtPopup:AccountSFRDetails_ExtPanelSet:AccountSFRDetails_ExtCV:PeriodDetailsTab:panelId-table']/tbody/tr/td/div/table/tbody/tr[1]/td[1]/div")
-  @Fill(10)
-  @ByXpath("//td[@columnid='gridcolumn-1743']")
-  public BrStringInput sichtjahr;
+  @ByXpath("//div[@id='PolicySFR_ExtPopup:AccountSFRDetails_ExtPanelSet:AccountSFRDetails_ExtCV:AccountSFRPeriods_ExtLV']//table[@data-recordindex='0']//tr//td[1]")
+  public BrElement sichtjahr;
+  
+  //@Fill(20)
+  @ByXpath("//div[contains(@class, 'boundlist') and not(contains(@style, 'display: none'))]//div//ul//li[contains(text(), '2018')]")
+  public BrElement sichtjahrwahl;
   
   @ById("PolicySFR_ExtPopup:Update-btnInnerEl")
   public BrElement ok;
   
   public void sfrfuellen() {
-    fill();
+    //fill();
+    sichtjahr.click();
+    sichtjahrwahl.click();
     ok.click();
   }
 

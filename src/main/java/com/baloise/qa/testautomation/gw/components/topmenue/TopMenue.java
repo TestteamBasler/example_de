@@ -4,14 +4,11 @@ import org.openqa.selenium.Keys;
 
 import com.baloise.qa.testautomation.gw.base.AGWComponent;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.ById;
-import com.baloise.testautomation.taf.base._interfaces.IAnnotations.ByXpath;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProvider;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProviderType;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.Fill;
-import com.baloise.testautomation.taf.browser.elements.BrElement;
 import com.baloise.testautomation.taf.browser.elements.BrLink;
 import com.baloise.testautomation.taf.browser.elements.BrStringInput;
-import com.fasterxml.jackson.annotation.JsonFormat.Value;
 
 @DataProvider(DataProviderType.EXCEL)
 public class TopMenue extends AGWComponent {

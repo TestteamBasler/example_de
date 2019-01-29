@@ -12,10 +12,10 @@ import com.baloise.testautomation.taf.browser.elements.BrElement;
 @DataProvider(DataProviderType.EXCEL)
 public class PolicenInformationen extends AGWComponent {
 
-  @Fill(10)
+/*  @Fill(10)
   @ById("SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:PolicyInfoInputSet:EffectiveDate-inputEl")
-  public BrDateInput begindatum;
-  
+  public BrDateInput begindatum;*/
+
   @Fill(20)
   @ById("SubmissionWizard:LOBWizardStepGroup:SubmissionWizard_PolicyInfoScreen:SubmissionWizard_PolicyInfoDV:UWCompanyInputSet:UWCompany-inputEl")
   public GWCombobox risikotraeger;
@@ -26,6 +26,7 @@ public class PolicenInformationen extends AGWComponent {
   public void policefuellen() {
     fill();
 	  weiter.click();
+    
   }
 
 }

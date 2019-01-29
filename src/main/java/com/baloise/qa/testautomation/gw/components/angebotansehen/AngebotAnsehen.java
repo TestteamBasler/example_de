@@ -1,8 +1,5 @@
 package com.baloise.qa.testautomation.gw.components.angebotansehen;
 
-import org.open.insurance.baloise.qa.ui.taf.gw.elements.GWCheckbox;
-import org.open.insurance.baloise.qa.ui.taf.gw.elements.GWCombobox;
-
 import com.baloise.qa.testautomation.gw.base.AGWComponent;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.ById;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.Check;
