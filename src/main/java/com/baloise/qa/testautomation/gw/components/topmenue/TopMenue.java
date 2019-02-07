@@ -29,6 +29,12 @@ public class TopMenue extends AGWComponent {
   @ById("TabBar:PolicyTab:PolicyTab_NewSubmission-itemEl")  
   private BrLink neuerantrag;
   
+  @ById("TabBar:ClaimTab")  
+  private BrLink claimtab;
+
+  @ById("TabBar:ClaimTab:ClaimTab_FNOLWizard-itemEl")  
+  private BrLink neuerschadensfall;
+  
   @Fill(310)
   @ById("TabBar:PolicyTab:PolicyTab_SubmissionNumberSearchItem-inputEl")
   private BrStringInput antragnummer;
@@ -48,6 +54,11 @@ public class TopMenue extends AGWComponent {
   public void selectMenueNeuerAntrag() {
 	  policetab.find().sendKeys(Keys.DOWN);
 	  neuerantrag.click();
+  }
+  
+  public void selectMenueNeuerSchadensfall() {
+    claimtab.find().sendKeys(Keys.DOWN);
+    neuerschadensfall.click();
   }
   
   @Override
