@@ -78,6 +78,7 @@ public class OotbCaseTest extends AGWPCTest {
     risikoanalyse.angebot.click();
     
     angebot.check();
+    angebot.policeausstellen();
 
   }
 

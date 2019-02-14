@@ -5,6 +5,7 @@ import com.baloise.testautomation.taf.base._interfaces.IAnnotations.ById;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.Check;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProvider;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProviderType;
+import com.baloise.testautomation.taf.browser.elements.BrElement;
 import com.baloise.testautomation.taf.browser.elements.BrLabel;
 
 
@@ -30,5 +31,20 @@ public class AngebotAnsehen extends AGWComponent {
   @Check(50)
   @ById("SubmissionWizard:SubmissionWizard_QuoteScreen:Quote_SummaryDV:TotalPremium-inputEl")
   public BrLabel gesamtpraemie;
+  
+  @ById("SubmissionWizard:SubmissionWizard_QuoteScreen:JobWizardToolbarButtonSet:BindOptions")
+  public BrElement machungsoptionen;
+  
+  @ById("SubmissionWizard:SubmissionWizard_QuoteScreen:JobWizardToolbarButtonSet:BindOptions:BindAndIssue-textEl")
+  public BrElement policeausstellen;
+  
+  @ById("button-1005")
+  public BrElement okbutton;
+  
+  public void policeausstellen() {
+    machungsoptionen.click();
+    policeausstellen.click();
+    okbutton.click(); 
+  }
 
 }

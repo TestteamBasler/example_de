@@ -1,4 +1,4 @@
-package com.baloise.qa.testautomation.gw.pc;
+package com.baloise.qa.testautomation.gw.cc;
 
 import org.open.insurance.baloise.qa.ui.taf.gw.interfaces.IGWApplication.Application;
 

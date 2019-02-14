@@ -1,4 +1,4 @@
-package com.baloise.qa.testautomation.gw.pc.neuerschadensfall;
+package com.baloise.qa.testautomation.gw.cc.neuerschadensfall;
 
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ import com.baloise.qa.testautomation.gw.components.policesuchen.PoliceSuchen;
 import com.baloise.qa.testautomation.gw.components.schadensdetails.Schadensdetails;
 import com.baloise.qa.testautomation.gw.components.schadensfallspeichern.SchadensfallSpeichern;
 import com.baloise.qa.testautomation.gw.components.topmenue.TopMenue;
-import com.baloise.qa.testautomation.gw.pc.AGWCCTest;
+import com.baloise.qa.testautomation.gw.cc.AGWCCTest;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProvider;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProviderType;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.Fill;
