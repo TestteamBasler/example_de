@@ -32,6 +32,9 @@ public class WerkzeugMenue extends AGWComponent {
   @ByXpath("//a[contains(@id,':LogoutTabBarLink-itemEl')]")
   private BrLink logout;
   
+  @ByXpath("//a[contains(@id,'button-1005')]")
+  private BrLink logoutconfirmbutton;
+  
   @ById("Login:LoginScreen:LoginDV:username-inputEl")
   public BrStringInput benutzername;
   
@@ -52,11 +55,17 @@ public class WerkzeugMenue extends AGWComponent {
   public void logout() {
   zahnrad.click();
   logout.click();
+  if (logoutconfirmbutton.exists()){
+    logoutconfirmbutton.click();
+  }
   }
   
   public void logoutAndCheck() {
   zahnrad.click();
   logout.click();
+  if (logoutconfirmbutton.exists()){
+    logoutconfirmbutton.click();
+  }
   // Prüfen, ob man in der Anmeldemaske gelandet ist.
     getBrowserFinder().waitUntilLoadingComplete();
     benutzername.find();

@@ -6,10 +6,12 @@ import org.open.insurance.baloise.qa.ui.taf.gw.elements.GWDateWithPickerInput;
 import com.baloise.qa.testautomation.gw.base.AGWComponent;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.ById;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.ByXpath;
+import com.baloise.testautomation.taf.base._interfaces.IAnnotations.Check;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProvider;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProviderType;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.Fill;
 import com.baloise.testautomation.taf.browser.elements.BrElement;
+import com.baloise.testautomation.taf.browser.elements.BrLabel;
 import com.baloise.testautomation.taf.browser.elements.BrLink;
 
 @DataProvider(DataProviderType.EXCEL)
@@ -45,6 +47,14 @@ public class FahrzeugangabenSFR extends AGWComponent {
   @ByXpath("//input[contains(@id,'AddSFRPopup:SFRScreen:SFRDV:SFRInputSet:DrivingLicenseCountry-inputEl')]")
   public GWCombobox fuehrerscheinland;
   
+  @Check(10)
+  @ByXpath("//div[contains(@id,':PFVehicle_BdePanelSet:CoverableDetailsCV:AddSFRPanelSet:SFRLV-body')]/div/div/table/tbody/tr/td[3]/div/..")
+  public BrLabel sfklasse1;
+  
+  @Check(20)
+  @ByXpath("//div[contains(@id,':PFVehicle_BdePanelSet:CoverableDetailsCV:AddSFRPanelSet:SFRLV-body')]/div/div/table/tbody/tr/td[3]/div/..")
+  public BrLabel sfklasse2;
+  
   @ById("SubmissionWizard:Next-btnInnerEl")
   public BrElement weiter;
   
@@ -56,6 +66,14 @@ public class FahrzeugangabenSFR extends AGWComponent {
     sfrhinzufuegen.click();
     fill();
     ok.click();
+  }
+  
+  public void SFRfuellenundpruefen() {
+    sfrtab.click();
+    sfrhinzufuegen.click();
+    fill();
+    ok.click();
+    check();
   }
   
   public void fuellenUndAngebot() {

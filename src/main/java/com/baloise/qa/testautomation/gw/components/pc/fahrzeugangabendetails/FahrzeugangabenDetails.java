@@ -19,6 +19,10 @@ import com.baloise.testautomation.taf.browser.elements.BrStringInput;
 @DataProvider(DataProviderType.EXCEL)
 public class FahrzeugangabenDetails extends AGWComponent {
 
+  @Fill(5)
+  @ByXpath("//input[contains(@id,':PFVehicle_BdeDetailsDV:RiskIndicatorInputSet:RiskIndicator_BdeInputSet:VehRiskIndicator-inputEl')]")
+  public GWCombobox wagniskennziffer;
+  
   @Fill(10)
   @ByXpath("//input[contains(@id,':PFVehicle_BdeDetailsDV:Fin-inputEl')]")
   public BrStringInput fin;
@@ -74,10 +78,6 @@ public class FahrzeugangabenDetails extends AGWComponent {
   @Fill(80)
   @ByXpath("//input[contains(@id,':PFVehicleOwner_BdeInputSet:PFVehicleOwnerInput-inputEl')]")
   public GWCombobox abwfahrzeughalter;
-  
-  @Fill(90)
-  @ByXpath("//input[contains(@id,':PFVehicle_BdeDetailsDV:RiskIndicatorInputSet:RiskIndicator_BdeInputSet:VehRiskIndicator-inputEl')]")
-  public GWCombobox wagniskennziffer;
   
   @ByXpath("//a[contains(@id,':PFVehicleOwnerInput:PFVehicleOwnerInputMenuIcon')]")
   public BrLink weiterefahrzeughalter;
@@ -163,7 +163,6 @@ public class FahrzeugangabenDetails extends AGWComponent {
     weiterefahrzeughalter.click();
     weiterefahrzeughalterwahl.click();
     fill();
-    fahrzeugdetails.click();
   }
   
   public void minimumfahrzeugangabenfuellen() {
