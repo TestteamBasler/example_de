@@ -11,7 +11,9 @@ public class GWBC implements IGWApplication {
 
   @Override
   public String getUrl(IGWTestcaseManager manager) {
-    return "http://18.184.194.1/bc";
+    //return "http://18.184.194.1/bc";
+    //return "http://ec2-52-59-193-174.eu-central-1.compute.amazonaws.com/bc";
+    return "http://ec2-3-121-159-91.eu-central-1.compute.amazonaws.com/bc";
   }
 
 }

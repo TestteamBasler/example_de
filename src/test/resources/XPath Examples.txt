@@ -1,0 +1,53 @@
+  @ByXpath("//input[contains(@id,':NewUserWizardBasicStepScreen:UserDetailDV:GlobalPersonNameInputSet:Prefix-inputEl')]")
+  public GWCombobox anrede;
+  
+  @ByXpath("//div[text()='<leer>'][1]")
+  private BrElement ele;
+	  
+  @ByXpath("//a[contains(@id,':Next')]")
+  private BrLink weiter;
+
+  @ByXpath("//div[contains(@id,':AccountSearchScreen:AccountSearchResultsLV-body')]//tr[1]//a")
+  private BrLink ersteskontoauswaehlen;
+
+  @ByXpath("//input[@name='ChargeGroup']")
+  public GWPopupStingInput typ;
+
+  @ByXpath("//div[@id='PolicyDetailPayments:PolicyDetailPaymentsScreen:InvoiceItemsLV-body']/div[1]/div[1]/table[1]/tbody/tr/td[3]/div")
+  public BrLabel rechnung1;
+
+  @ByXpath("//div[@id='NewContact:ABContactDetailScreen:ContactBasicsDV:TagsInputSet:Tags-innerCt']//li[text()='Anbieter']")
+  public BrElement taganbieter;
+
+  @ByXpath("//table[@id='x-unsavedwork-table']//a[text()='Ansprechpartner']")
+  public BrLink ansprechpartner;
+
+  @ByXpath("//table[contains(@id,':PFVehicleDefaultGrp:PFVehicleCoverages_ExtDV_ref-table')]//div[text()='Kasko']/..//input[1]")
+  public GWCheckbox kasko;
+
+  @ByXpath("//div[text()='Haftpflicht Grunddeckung']/../..//span[text()='Deckungssumme']/../..//input[1]")
+  public GWCombobox haftgrunddeckungssumme;
+
+  @ByXpath("//div[@id='PolicySFR_ExtPopup:AccountSFRDetails_ExtPanelSet:AccountSFRDetails_ExtCV:AccountSFRPeriods_ExtLV']//table[@data-recordindex='0']//tr//td[1]")
+  public BrElement sichtjahr;
+  
+  @ByXpath("//div[contains(@class, 'boundlist') and not(contains(@style, 'display: none'))]//div//ul//li[contains(text(), '2018')]")
+  public BrElement sichtjahrwahl;
+
+  @ByXpath("//a/span[text()='International']/..")
+  private BrLink international;
+
+  @ByXpath("//a/span[contains (text(), 'Abmelden ') or contains (text(), 'Log Out ')]/..")
+  private BrLink logout;
+
+
+
+
+
+
+  @Override
+  public void fill() {
+	if (!(selectpolice.fillValue().isSkip() || selectpolice.fillValue().isEmpty() || selectpolice.fillValue().isNull())) {
+	  getBrowserFinder().getDriver().findElement(By.xpath("//a[text()='" + selectpolice.fillValueAsString() + "']")).click();
+	}
+  }

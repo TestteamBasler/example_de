@@ -10,6 +10,21 @@ import com.baloise.testautomation.taf.base._base.ABase;
 
 @TestcaseManager(GWTestcaseManager.class)
 public abstract class AGWTest extends ABase {
+  // global im Test gespeicherte Daten für Zeitreise
+  private String timetravelyear = "undefined";
+
+  // Setzt das Zeitreisejahr
+  public void setTimeTravelYear (String year) {
+	timetravelyear = year;
+  }
+  
+  // gibt das Zeitreisejahr zurück
+  public String getTimeTravelYear (boolean full) {
+	if (full || timetravelyear.length() > 4) {
+	  return timetravelyear;
+	}
+	return timetravelyear.substring(2);
+  }
 
   @ClassRule
   public static GWClassWatcher classWatcher = new GWClassWatcher("target\\");

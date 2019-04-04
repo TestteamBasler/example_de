@@ -2,13 +2,13 @@ package com.baloise.qa.testautomation.gw.cc.neuerschadensfall;
 
 import org.junit.Test;
 
-import com.baloise.qa.testautomation.gw.components.allgemeineinformationen.AllgemeineInformationen;
-import com.baloise.qa.testautomation.gw.components.dienste.Dienste;
+import com.baloise.qa.testautomation.gw.components.cc.allgemeineinformationen.AllgemeineInformationen;
+import com.baloise.qa.testautomation.gw.components.cc.dienste.Dienste;
+import com.baloise.qa.testautomation.gw.components.cc.schadensdetails.Schadensdetails;
+import com.baloise.qa.testautomation.gw.components.cc.schadensfallspeichern.SchadensfallSpeichern;
+import com.baloise.qa.testautomation.gw.components.cc_policesuchen.PoliceSuchen;
 import com.baloise.qa.testautomation.gw.components.login.Login;
-import com.baloise.qa.testautomation.gw.components.policesuchen.PoliceSuchen;
-import com.baloise.qa.testautomation.gw.components.schadensdetails.Schadensdetails;
-import com.baloise.qa.testautomation.gw.components.schadensfallspeichern.SchadensfallSpeichern;
-import com.baloise.qa.testautomation.gw.components.topmenue.TopMenue;
+import com.baloise.qa.testautomation.gw.components.pc.topmenue.TopMenue;
 import com.baloise.qa.testautomation.gw.cc.AGWCCTest;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProvider;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProviderType;

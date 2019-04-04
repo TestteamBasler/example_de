@@ -11,7 +11,9 @@ public class GWCC implements IGWApplication {
 
   @Override
   public String getUrl(IGWTestcaseManager manager) {
-    return "http://18.184.194.1/cc";
+    //return "http://18.184.194.1/cc";
+	//return "http://ec2-3-120-32-27.eu-central-1.compute.amazonaws.com/cc";
+	return "http://ec2-3-121-159-91.eu-central-1.compute.amazonaws.com/cc";
   }
 
 }

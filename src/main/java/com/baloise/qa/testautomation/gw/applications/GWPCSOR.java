@@ -11,7 +11,9 @@ public class GWPCSOR implements IGWApplication {
 
   @Override
   public String getUrl(IGWTestcaseManager manager) {
-    return "http://18.184.194.1/pc";
+    //return "http://18.184.194.1/pc";
+    //return "http://ec2-18-185-52-123.eu-central-1.compute.amazonaws.com/pc";
+    return "http://ec2-3-121-159-91.eu-central-1.compute.amazonaws.com/pc";
   }
 
 }

@@ -3,7 +3,7 @@ package com.baloise.qa.testautomation.gw.pc.spracheaendern;
 import org.junit.Test;
 
 import com.baloise.qa.testautomation.gw.components.login.Login;
-import com.baloise.qa.testautomation.gw.components.werkzeugmenue.WerkzeugMenue;
+import com.baloise.qa.testautomation.gw.components.pc.werkzeugmenue.WerkzeugMenue;
 import com.baloise.qa.testautomation.gw.pc.AGWPCTest;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProvider;
 import com.baloise.testautomation.taf.base._interfaces.IAnnotations.DataProviderType;
@@ -20,14 +20,15 @@ public class SpracheAendernTest extends AGWPCTest {
   @Test
   public void execute() {
     logger.info("Starting test case");
-    setFill("pcsprache");
-    login.fill();
+    setFill("sudeutsch");
     
+//    login.fill();
+//    werkzeugmenue.setToEnglisch();
+//    werkzeugmenue.logout();
+    
+    login.fill();
     werkzeugmenue.setToDeutsch();
-    werkzeugmenue.setToEnglisch();
-    werkzeugmenue.logout();
-
-    getGWDriver().close();
+    //werkzeugmenue.logout();
 
   }
 
